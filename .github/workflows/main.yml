@@ -41,7 +41,6 @@ jobs:
     needs: tests
     steps:
       - name: Check out the repo
-        # Проверка доступности репозитория Docker Hub для workflow
         uses: actions/checkout@v2 
       - name: Set up Docker Buildx
         # Вызов сборщика контейнеров docker
